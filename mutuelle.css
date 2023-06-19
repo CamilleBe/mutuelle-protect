@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FF945C;
+    color: white;
+    width: 150px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #c65624;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*NAV*/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+/*HEADER*/
+header {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+header div:first-child {
+    margin-left: 125px;
+    padding-right: 75px;
+    padding-left: 75px;
+    width: 40%;
+}
+
+header div:first-child h1 {
+    width: 80%;
+}
+
+header div:first-child p{
+    width: 70%;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+/*MAIN*/
+
+main {
+    margin: auto;
+    margin-top: 75px;
+    width: 75%;
+}
+
+/*Case*/
+
+.case {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    color: white;
+    align-items: center;
+    gap: 15px;
+}
+
+.orange {
+    background-color: #FF945C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 325px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.orange h3{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.orange img {
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#img-tr {
+    margin-bottom: 25px;
+}
+
+#img-pr {
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+#teeth {
+    height: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*CARD*/
+#blue {
+    background-image: url("img/mamie.png");
+}
+
+#violet {
+    background-image: url("img/card-family.png");
+}
+
+.card {
+    width: 485px;
+    height: 400px;
+    margin-right: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 70%;
+    margin-left: 25px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #FF945C;
+    padding: 25px;
+    color: white;
+    text-align: center;
+}
+
+/*BANDEAU*/
+#bandeau {
+    background-color: #FFDEBF;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+}
+
+#bandeau span {
+    color: #FF5700;
+}
+
+#bandeau p {
+    color: #2E2E2E;
+}
+
+#bandeau h2 {
+    margin-bottom: 25px;
+}
+
+/*TEXT*/
+.text {
+    text-align: left;
+    color: black;
+    width: 400px;
+}
+
+.text h3 {
+    color: #A83B03;
+    margin-bottom: 25px;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+
+.texte button {
+    margin-top: 25px;
+}
+
+#btn-raj {
+    margin-top: 25px;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 1680px) {
+    header img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1680px) {
+    header div:first-child {
+        padding: 0;
+    }
+
+    header div:first-child p, div:first-child h1 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 1420px) {
+    .case {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1300px) {
+    .text {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1244px) {
+    .container-card {
+       margin-bottom: 50px;
+    }
+
+    .text {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1200px) {
+    header div:first-child h1, header div:first-child p{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px) {
+    header div:first-child {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    header div:first-child{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    header div:nth-child(2){
+        display: none;
+    }
+
+    header div:first-child{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    header a {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #bandeau {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .text {
+        text-align: center;
+        width: 400px;
+    }
+}
+
+@media (max-width: 650px) {
+    .card div {
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .orange, .card {
+        margin-right: 0;
+    }
+}
